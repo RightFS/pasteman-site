@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="PasteMan Privacy Policy / PasteMan 隐私政策">
+  <title>PasteMan Privacy Policy · 隐私政策</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f5f7fb; --card:#fff; --text:#182033; --muted:#5f6879; --line:#dfe5ef; --accent:#087cff; --soft:#eaf3ff; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#11151c; --card:#1a202a; --text:#f1f5fb; --muted:#aab4c4; --line:#303847; --accent:#55a5ff; --soft:#182c43; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.72 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(820px,calc(100% - 32px)); margin:48px auto; }
+    article { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:clamp(24px,5vw,56px); box-shadow:0 18px 55px rgba(35,51,78,.08); }
+    header { padding-bottom:26px; border-bottom:1px solid var(--line); }
+    .brand { display:flex; align-items:center; gap:12px; color:var(--accent); font-weight:750; letter-spacing:-.02em; }
+    .mark { position:relative; width:30px; height:30px; }
+    .mark::before,.mark::after { content:""; position:absolute; width:20px; height:20px; border-radius:5px; background:var(--accent); }
+    .mark::before { left:1px; top:3px; opacity:.55; } .mark::after { right:1px; bottom:3px; }
+    h1 { margin:22px 0 8px; font-size:clamp(32px,6vw,48px); line-height:1.12; letter-spacing:-.04em; }
+    h2 { margin:34px 0 8px; font-size:21px; line-height:1.35; }
+    h3 { margin:28px 0 8px; font-size:18px; }
+    p,li { color:var(--muted); }
+    strong { color:var(--text); }
+    ul { padding-left:22px; }
+    a { color:var(--accent); text-underline-offset:3px; }
+    .summary { margin:24px 0 0; padding:18px 20px; border-radius:14px; background:var(--soft); color:var(--text); }
+    .lang { margin-top:44px; padding-top:36px; border-top:1px solid var(--line); }
+    footer { padding:22px 8px 0; text-align:center; color:var(--muted); font-size:14px; }
+    nav { display:flex; flex-wrap:wrap; gap:16px; justify-content:center; }
+    @media (max-width:520px) { main { margin:16px auto 32px; } article { border-radius:16px; } }
+  </style>
+</head>
+<body>
+<main>
+  <article>
+    <header>
+      <div class="brand"><span class="mark" aria-hidden="true">&#8203;</span><span>PasteMan</span></div>
+      <h1>隐私政策</h1>
+      <p>生效日期：2026 年 10 月 10 日</p>
+      <p class="summary"><strong>简要说明：</strong>PasteMan 无需账号，没有广告、分析工具或遥测。开发者不会接收或存储你的剪贴板内容。历史记录保存在本机；只有在你明确配对设备并启用共享后，新内容才会通过局域网加密直传给该设备。</p>
+    </header>
+
+    <section lang="zh-CN">
+      <h2>1. PasteMan 处理的信息</h2>
+      <p>为了提供剪贴板历史功能，PasteMan 会在你的 Mac 上处理你复制的文本、网址和静态图片。应用还可能在本机保存来源应用标识、记录时间、收藏状态、偏好设置、可信设备信息和同步状态。</p>
+
+      <h2>2. 数据存储与收集</h2>
+      <p>剪贴板历史和应用状态保存在你的 Mac 上，并使用由 macOS 钥匙串保护的密钥进行加密。PasteMan 不要求注册账号，不连接开发者运营的云端服务，也不包含广告、用户分析、行为追踪或崩溃遥测服务。开发者不会收集、接收或出售你的剪贴板内容或使用数据。</p>
+
+      <h2>3. 局域网设备同步</h2>
+      <p>设备同步默认关闭。只有当你在两台设备上明确启用共享、完成双方配对并保持授权时，PasteMan 才会在局域网内发送配对后产生的新内容。传输使用加密连接，不经过开发者服务器。接收设备会按照其本地保留设置保存收到的内容。解除配对会停止后续同步，但不会自动删除另一台设备已经收到的记录。</p>
+
+      <h2>4. 系统权限</h2>
+      <ul>
+        <li><strong>剪贴板：</strong>用于发现并保存受支持的新剪贴板内容，以及将选中的历史记录写回剪贴板。</li>
+        <li><strong>本地网络：</strong>仅用于发现、配对并连接你授权的附近设备。</li>
+        <li><strong>辅助功能（可选）：</strong>仅用于在你选择“粘贴”时向原应用发送 Command-V。拒绝该权限后，复制和手动粘贴仍可使用。</li>
+        <li><strong>登录项（可选）：</strong>只有在你主动开启时，macOS 才会允许 PasteMan 登录后启动。</li>
+      </ul>
+
+      <h2>5. 你的控制</h2>
+      <p>你可以随时暂停记录或同步、排除指定应用、删除单条或全部历史、调整保留期限和容量限制，或解除可信设备。卸载应用前，你也可以先在 PasteMan 中清除历史和解除配对。</p>
+
+      <h2>6. 敏感内容</h2>
+      <p>剪贴板可能包含密码、验证码或其他敏感信息。PasteMan 会忽略部分被来源应用标记为临时或保密的内容，但此类标记并非由所有应用提供，也不能形成完整的安全边界。处理敏感信息时，请暂停记录或将相关应用加入排除列表。</p>
+
+      <h2>7. 儿童隐私</h2>
+      <p>PasteMan 是通用效率工具，不面向儿童，也不会有意收集儿童个人信息。</p>
+
+      <h2>8. 政策更新与联系</h2>
+      <p>如果应用的数据处理方式发生实质变化，本政策将随之更新并修改生效日期。如有隐私问题，请发送邮件至 <a href="mailto:szz@joymoe.com?subject=PasteMan%20Privacy">szz@joymoe.com</a>。</p>
+    </section>
+
+    <section class="lang" lang="en">
+      <h2>Privacy Policy</h2>
+      <p><strong>Effective date:</strong> October 10, 2026</p>
+      <p class="summary"><strong>In brief:</strong> PasteMan requires no account and contains no advertising, analytics, or telemetry. The developer does not receive or store your clipboard content. History stays on your Mac. New items are transferred directly over your local network only after you pair devices and enable sharing.</p>
+
+      <h3>Information PasteMan processes</h3>
+      <p>To provide clipboard history, PasteMan processes copied text, URLs, and static images on your Mac. It may also store source application identifiers, capture times, favorite status, preferences, trusted-device details, and synchronization state locally.</p>
+
+      <h3>Storage and collection</h3>
+      <p>Clipboard history and application state are stored on your Mac and encrypted with keys protected by the macOS Keychain. PasteMan does not require an account, connect to a developer-operated cloud service, or include advertising, analytics, tracking, or crash-telemetry services. The developer does not collect, receive, sell, or otherwise access your clipboard content or usage data.</p>
+
+      <h3>Local-network synchronization</h3>
+      <p>Device synchronization is off by default. New content created after pairing is sent only when sharing is enabled on both devices and both users complete pairing. Transfers use an encrypted local-network connection and do not pass through developer servers. Unpairing stops future synchronization but does not automatically erase items already received by the other device.</p>
+
+      <h3>System permissions</h3>
+      <ul>
+        <li><strong>Clipboard:</strong> detects supported new items and writes a selected history item back to the clipboard.</li>
+        <li><strong>Local Network:</strong> discovers, pairs with, and connects to nearby devices you authorize.</li>
+        <li><strong>Accessibility (optional):</strong> sends Command-V to the previously active app when you choose Paste. Copy and manual paste remain available without it.</li>
+        <li><strong>Login Item (optional):</strong> lets macOS start PasteMan after login only when you enable it.</li>
+      </ul>
+
+      <h3>Your controls</h3>
+      <p>You can pause recording or sync, exclude applications, delete individual or all history, change retention and storage limits, and remove trusted devices at any time.</p>
+
+      <h3>Sensitive content</h3>
+      <p>Clipboards can contain passwords, one-time codes, and other sensitive information. PasteMan ignores some content marked temporary or confidential by its source app, but not every app supplies these markers. Pause recording or exclude relevant apps when handling sensitive material.</p>
+
+      <h3>Children, changes, and contact</h3>
+      <p>PasteMan is a general productivity tool and is not directed to children. If its data practices materially change, this policy and its effective date will be updated. For privacy questions, email <a href="mailto:szz@joymoe.com?subject=PasteMan%20Privacy">szz@joymoe.com</a>.</p>
+    </section>
+  </article>
+  <footer><nav><a href="support.html">支持与帮助 · Support</a><a href="mailto:szz@joymoe.com">szz@joymoe.com</a></nav></footer>
+</main>
+</body>
+</html>
