@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="PasteMan Support / PasteMan 支持与帮助">
+  <title>PasteMan Support · 支持与帮助</title>
+  <style>
+    :root { color-scheme:light dark; --bg:#f5f7fb; --card:#fff; --text:#182033; --muted:#5f6879; --line:#dfe5ef; --accent:#087cff; --soft:#eaf3ff; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#11151c; --card:#1a202a; --text:#f1f5fb; --muted:#aab4c4; --line:#303847; --accent:#55a5ff; --soft:#182c43; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.68 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(880px,calc(100% - 32px)); margin:48px auto; }
+    article { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:clamp(24px,5vw,56px); box-shadow:0 18px 55px rgba(35,51,78,.08); }
+    .brand { display:flex; align-items:center; gap:12px; color:var(--accent); font-weight:750; }
+    .mark { position:relative; width:30px; height:30px; }
+    .mark::before,.mark::after { content:""; position:absolute; width:20px; height:20px; border-radius:5px; background:var(--accent); }
+    .mark::before { left:1px; top:3px; opacity:.55; } .mark::after { right:1px; bottom:3px; }
+    h1 { margin:22px 0 8px; font-size:clamp(32px,6vw,48px); line-height:1.12; letter-spacing:-.04em; }
+    h2 { margin:36px 0 14px; font-size:22px; }
+    h3 { margin:0 0 7px; font-size:17px; }
+    p,li { color:var(--muted); }
+    strong { color:var(--text); }
+    a { color:var(--accent); text-underline-offset:3px; }
+    .lead { max-width:660px; font-size:18px; }
+    .contact { display:inline-block; margin-top:14px; padding:12px 18px; border-radius:11px; background:var(--accent); color:#fff; text-decoration:none; font-weight:700; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    .item { padding:20px; border:1px solid var(--line); border-radius:14px; background:var(--soft); }
+    .item p { margin:0; }
+    .steps li { margin-bottom:10px; }
+    .lang { margin-top:44px; padding-top:38px; border-top:1px solid var(--line); }
+    footer { padding:22px 8px 0; text-align:center; color:var(--muted); font-size:14px; }
+    nav { display:flex; flex-wrap:wrap; gap:16px; justify-content:center; }
+    @media (max-width:650px) { main { margin:16px auto 32px; } article { border-radius:16px; } .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<main>
+  <article>
+    <header>
+      <div class="brand"><span class="mark" aria-hidden="true">&#8203;</span><span>PasteMan</span></div>
+      <h1>支持与帮助</h1>
+      <p class="lead">PasteMan 是 macOS 菜单栏剪贴板历史工具，可在你明确配对的 Mac 之间通过局域网加密同步新内容。</p>
+      <a class="contact" href="mailto:szz@joymoe.com?subject=PasteMan%20Support">联系支持：szz@joymoe.com</a>
+    </header>
+
+    <section lang="zh-CN">
+      <h2>快速使用</h2>
+      <div class="grid">
+        <div class="item"><h3>打开历史</h3><p>点击菜单栏中的 PasteMan 图标，或按默认快捷键 Option-V。</p></div>
+        <div class="item"><h3>复制与粘贴</h3><p>Enter 尝试粘贴；Command-Enter 仅复制。未授予辅助功能权限时可手动按 Command-V。</p></div>
+        <div class="item"><h3>设置与暂停</h3><p>右键或 Control-点击菜单栏图标，可打开设置、暂停记录或同步以及退出应用。</p></div>
+        <div class="item"><h3>设备同步</h3><p>在两台 Mac 上打开“设置 → 设备与同步”，启用共享并按六位验证码完成双方配对。</p></div>
+      </div>
+
+      <h2>常见问题</h2>
+      <ol class="steps">
+        <li><strong>看不到菜单栏图标：</strong>检查菜单栏空间，或在活动监视器中退出 PasteMan 后重新打开。</li>
+        <li><strong>无法自动粘贴：</strong>前往“系统设置 → 隐私与安全性 → 辅助功能”允许 PasteMan。即使不授权，复制和手动粘贴仍然可用。</li>
+        <li><strong>两台 Mac 无法互相发现：</strong>确认两台设备在同一普通局域网，PasteMan 已获得“本地网络”权限，且路由器没有启用访客网络隔离。</li>
+        <li><strong>没有记录新内容：</strong>确认记录未暂停、来源应用未被排除，并检查内容是否被来源应用标记为临时或保密。</li>
+        <li><strong>如何删除数据：</strong>可在历史中删除单条记录，或在“设置 → 历史与隐私”中清理历史；可信设备可在“设备与同步”中解除。</li>
+      </ol>
+
+      <h2>联系支持前</h2>
+      <p>请提供 PasteMan 版本、macOS 版本、Mac 芯片类型和复现步骤。请勿发送密码、验证码、完整配对邀请、私钥或敏感剪贴板正文。</p>
+      <p><strong>系统要求：</strong>macOS 15.5 或更高版本。当前应用版本：1.0.0。</p>
+    </section>
+
+    <section class="lang" lang="en">
+      <h2>Support</h2>
+      <p class="lead">PasteMan is a macOS menu bar clipboard-history utility that can securely sync new items between Macs you explicitly pair on your local network.</p>
+
+      <h2>Quick start</h2>
+      <div class="grid">
+        <div class="item"><h3>Open history</h3><p>Click the PasteMan menu bar icon or press the default Option-V shortcut.</p></div>
+        <div class="item"><h3>Copy and paste</h3><p>Press Enter to attempt paste or Command-Enter to copy only. Manual Command-V works without Accessibility permission.</p></div>
+        <div class="item"><h3>Settings and pause</h3><p>Right-click or Control-click the menu bar icon to open Settings, pause recording or sync, or quit.</p></div>
+        <div class="item"><h3>Device sync</h3><p>On both Macs, open Settings → Devices &amp; Sync, enable sharing, and complete mutual pairing with the six-digit code.</p></div>
+      </div>
+
+      <h2>Troubleshooting</h2>
+      <ol class="steps">
+        <li><strong>No menu bar icon:</strong> check available menu bar space, or quit PasteMan in Activity Monitor and reopen it.</li>
+        <li><strong>Automatic paste does not work:</strong> allow PasteMan under System Settings → Privacy &amp; Security → Accessibility. Copy and manual paste remain available without permission.</li>
+        <li><strong>Macs cannot discover each other:</strong> confirm both are on the same regular local network, Local Network permission is enabled, and guest-network isolation is off.</li>
+        <li><strong>New items are not recorded:</strong> confirm recording is not paused, the source app is not excluded, and the source did not mark the item temporary or confidential.</li>
+        <li><strong>Delete data:</strong> remove individual items from history or clear history under Settings → History &amp; Privacy. Remove trusted devices under Devices &amp; Sync.</li>
+      </ol>
+
+      <h2>Contact</h2>
+      <p>When contacting support, include the PasteMan version, macOS version, Mac chip type, and reproduction steps. Do not send passwords, one-time codes, complete pairing invitations, private keys, or sensitive clipboard content.</p>
+      <p><strong>Requirements:</strong> macOS 15.5 or later. Current app version: 1.0.0.</p>
+      <a class="contact" href="mailto:szz@joymoe.com?subject=PasteMan%20Support">Email szz@joymoe.com</a>
+    </section>
+  </article>
+  <footer><nav><a href="privacy.html">隐私政策 · Privacy Policy</a><a href="mailto:szz@joymoe.com">szz@joymoe.com</a></nav></footer>
+</main>
+</body>
+</html>
